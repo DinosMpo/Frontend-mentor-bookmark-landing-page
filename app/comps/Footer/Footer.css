@@ -1,0 +1,11 @@
+footer {
+    margin-top: 150px;
+    background-color: hsl(231, 69%, 60%);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* height: 360px; */

@@ -1,0 +1,133 @@
+#features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1270px; */
+    /* border: 1px solid red; */
+}
+
+#features-title {}
+
+#features-description {
+    color: grey;
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+#features-categories {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#feature-categories-container {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.features-category {
+    padding: 30px 0px;
+    width: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.features-category:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.features-category-active {
+    box-sizing: border-box;
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+
+.features-category-description {
+    color: grey;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.features-category-more-info {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    display: flex;
+    width: 115px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.features-category-more-info:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+
+@media only screen and (max-width: 650px) {
+    #features-title {
+        font-size: 24px;
+    }
+
+    #features-container {
+        width: 100%;
+    }
+
+    #features-description {
+        font-size: 16px;
+    }
+
+    #features-categories {
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid lightgrey;
+    }
+
+    .features-category {
+        padding: 30px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid lightgrey;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: 0.1s ease;
+        position: relative;
+    }
+
+    .features-category-active {
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .features-category-active:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        width: 30%;
+        border-bottom: 4px solid hsl(0, 94%, 66%);
+    }
+} 

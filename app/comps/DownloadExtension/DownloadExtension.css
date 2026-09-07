@@ -1,0 +1,36 @@
+#download-extensions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#download-extensions-description {
+    color: grey;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+#extensions-list-container {
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 130px;
+}
+
+@media only screen and (max-width: 650px) {
+    #download-extensions-container {
+        width: 90%;
+    }
+
+    #extensions-list-container {
+        /* margin-top: 50px; */
+        /* display: flex; */
+        /* gap: 20px; */
+        /* margin-bottom: 130px; */
+        
+        flex-direction: column;
+    }
+}
