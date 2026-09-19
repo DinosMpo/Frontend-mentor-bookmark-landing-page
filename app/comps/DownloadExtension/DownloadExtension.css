@@ -25,6 +25,14 @@
         width: 90%;
     }
 
+    #download-extension-title {
+        font-size: 24px;
+    }
+
+    #download-extensions-description {
+        line-height: 25px;
+    }
+
     #extensions-list-container {
         /* margin-top: 50px; */
         /* display: flex; */

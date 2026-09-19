@@ -1,112 +1,137 @@
 #contact-container {
-    /* height: 360px; */
-    padding-top: 73px;
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    /* text-align: center; */
+  padding-top: 73px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact-description {
-    letter-spacing: 4px;
-    font-size: 13px;
-    font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 #contact-wrapper {
-    text-align: center;
-    /* box-sizing: border-box; */
+  text-align: center;
 }
 
-#contact-info {
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 53px;
-    padding-bottom: 44px;
+#contact-info-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 53px;
+  padding-bottom: 44px;
 }
 
 #contact-input-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* align-items: center; */
-    gap: 20px;
-    /* justify-content: space-between; */
-    padding-bottom: 75px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 75px;
 }
 
 #contact-input-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .contact-input-wrapper-error {
-    background-color: hsl(0, 94%, 66%);
-    outline: solid hsl(0, 94%, 66%) 2px;
-    border-radius: 5px;
+  background-color: hsl(0, 94%, 66%);
+  outline: solid hsl(0, 94%, 66%) 2px;
+  border-radius: 5px;
 }
 
 #contact-input {
-    width: 300px;
-    height: 48px;
-    border-radius: 5px;
-    border: 0px;
-    box-sizing: border-box;
-    padding-left: 20px;
-    /* outline: solid hsl(0, 94%, 66%) 2px; */
+  width: 300px;
+  height: 48px;
+  border-radius: 5px;
+  border: 0px;
+  box-sizing: border-box;
+  padding-left: 20px;
 }
 
 #input-error-img {
-    /* display: none; */
-    position: absolute;
-    right: 15px;
-    top: 13px;
+  position: absolute;
+  right: 15px;
+  top: 13px;
 }
 
 .contact-error {
-    display: none;
-    color: white;
-    width: 100%;
-    font-size: 11px;
-    font-style: italic;
-    text-align: left;
-    height: 25px;
-    align-items: center;
-    padding-left: 10px;
-    box-sizing: border-box;
-    outline: solid hsl(0, 94%, 66%) 2px;
-    background-color: hsl(0, 94%, 66%);
-    border-radius: 0px 0px 5px 5px;
-    position: absolute;
-    /* background-color: hsl(0, 94%, 66%); */
+  display: none;
+  color: white;
+  width: 100%;
+  font-size: 11px;
+  font-style: italic;
+  text-align: left;
+  height: 25px;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+  outline: solid hsl(0, 94%, 66%) 2px;
+  background-color: hsl(0, 94%, 66%);
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
 }
 
 .error-img {
-    display: none;
+  display: none;
 }
 
 .show-error {
-    display: flex;
+  display: flex;
 }
 
 #contact-submit {
-    color: white;
-    background-color: hsl(0, 94%, 66%);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    height: 48px;
-    font-weight: bold;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: 0.1s ease;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 48px;
+  font-weight: bold;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.1s ease;
 }
 
 #contact-submit:hover {
-    background-color: white;
-    border: 1px solid hsl(0, 94%, 66%);
-    color: hsl(0, 94%, 66%);
+  background-color: white;
+  border: 1px solid hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+}
+
+@media only screen and (max-width: 650px) {
+  #contact-container {
+    width: 92%;
+  }
+
+  #contact-wrapper {
+    width: 100%;
+  }
+
+  #contact-info-title {
+    font-size: 23.5px;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+
+  #contact-input-container {
+    flex-direction: column;
+    padding-bottom: 40px;
+    gap: 40px;
+  }
+
+  #contact-input {
+    width: 100%;
+  }
+
+  #contact-submit {
+    width: 100%;
+    font-size: 14px;
+  }
 }
