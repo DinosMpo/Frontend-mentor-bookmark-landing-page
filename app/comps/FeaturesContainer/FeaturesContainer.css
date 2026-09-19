@@ -3,8 +3,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* max-width: 1270px; */
-    /* border: 1px solid red; */
 }
 
 #features-title {}
@@ -28,7 +26,6 @@
 }
 
 #feature-categories-container {
-    /* border: 1px solid black; */
     width: 100%;
     display: flex;
     flex-direction: column;

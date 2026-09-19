@@ -38,18 +38,6 @@ export default function DownloadExtension() {
       </div>
 
       <div id="extensions-list-container">{extensionList}</div>
-
-      {/* Add to Chrome
-            Minimum version 62
-            Add & Install Extension
-
-            Add to Firefox
-            Minimum version 55
-            Add & Install Extension
-
-            Add to Opera
-            Minimum version 46
-            Add & Install Extension */}
     </div>
   );
 }

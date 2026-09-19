@@ -1,6 +1,5 @@
 #nav-container {
   display: flex;
-  /* border: 1px solid black; */
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -10,7 +9,6 @@
 
 #nav-wrapper {
   display: flex;
-  /* border: 1px solid black; */
   width: 100%;
   max-width: 455px;
   height: 40px;

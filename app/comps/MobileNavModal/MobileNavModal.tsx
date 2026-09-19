@@ -15,8 +15,7 @@ export default function MobileNavModal({
             alt="logo"
             width={0}
             height={0}
-            // sizes="100vw"
-            style={{ width: "148px", height: "25px" }} // optional
+            style={{ width: "148px", height: "25px" }}
           />
 
           <div
@@ -55,9 +54,6 @@ export default function MobileNavModal({
             <div className="mobile-nav-category">CONTACT</div>
           </a>
 
-          {/* <div className="nav-category">FEATURES</div>
-            <div className="nav-category">PRICING</div>
-            <div className="nav-category">CONTACT</div> */}
           <div id="mobile-login-button">LOGIN</div>
         </div>
       </div>

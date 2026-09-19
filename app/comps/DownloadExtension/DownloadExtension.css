@@ -13,7 +13,6 @@
 }
 
 #extensions-list-container {
-    /* border: 1px solid black; */
     margin-top: 50px;
     display: flex;
     gap: 20px;
@@ -34,11 +33,6 @@
     }
 
     #extensions-list-container {
-        /* margin-top: 50px; */
-        /* display: flex; */
-        /* gap: 20px; */
-        /* margin-bottom: 130px; */
-        
         flex-direction: column;
     }
 }

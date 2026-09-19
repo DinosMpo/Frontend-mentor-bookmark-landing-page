@@ -25,11 +25,9 @@ export default function Feature({
           id="test"
           alt="image"
           src={item.img}
-          // sizes="100vw"
           style={{
             width: "100%",
             maxWidth: `${item.img_width}px`,
-            // height: "auto",
             maxHeight: `${item.img_height}px`,
           }}
           width={Number(item.img_width)}
@@ -55,47 +53,4 @@ export default function Feature({
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="feature-img-container">
-    <div style={{
-        // display: 'flex',
-        // justifyContent: 'center',
-        height: '500px',
-        border: '1px solid red',
-        position: 'relative'
-        // width: '100%',
-        // minWidth: '520px'
-    }}>
-        <Image
-            id="test"
-            alt="image"
-            src={item.img}
-            sizes="100vw"
-            style={{
-                width: '100%',
-                maxWidth: `${item.img_width}px`,
-                height: 'auto',
-                maxHeight: `${item.img_height}px`
-            }}
-            width={Number(item.img_width)}
-            height={Number(item.img_height)}
-            className={`feature-img-${order}`}
-        />
-    </div>
-
-
-    <div className="feature-background-rectangular">
-        <div style={{
-            backgroundColor: 'white',
-            maxWidth: '150px',
-            width: '80%',
-            height: '170px',
-            position: 'absolute',
-            right: '0'
-        }}></div>
-    </div>
-
-</div> */
 }

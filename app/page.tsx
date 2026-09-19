@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import TopNav from "./comps/TopNav/TopNav";
 import MainComponent from "./comps/MainComponent/MainComponent";
-// import Features from "./comps/FeaturesContainer/FeaturesContainer";
 import FeaturesContainer from "./comps/FeaturesContainer/FeaturesContainer";
 import DownloadExtension from "./comps/DownloadExtension/DownloadExtension";
 import QuestionsContainer from "./comps/QuestionsContainer/QuestionsContainer";

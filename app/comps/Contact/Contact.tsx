@@ -9,11 +9,8 @@ export default function Contact() {
   const [email, setEmail] = useState("");
 
   const submitEmail = () => {
-    // alert(email);
-    // setContactError(preV => !preV);
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     setContactError(!regex.test(email));
-    // console.log(regex.test(email))
   };
 
   return (
@@ -23,7 +20,6 @@ export default function Contact() {
       <div id="contact-wrapper">
         <div id="contact-info-title">Stay up-to-date with what we’re doing</div>
 
-        {/* elegxos oti einai email */}
         <div id="contact-input-container">
           <div
             id="contact-input-wrapper"

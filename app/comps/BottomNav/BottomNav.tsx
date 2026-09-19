@@ -13,8 +13,6 @@ export default function BottomNav() {
             width={0}
             height={0}
             id="logo-bookmark-light"
-            // sizes="100vw"
-            // style={{ width: "148px", height: "25px" }} // optional
           />
           <a className="bottom-link" href="#features-container">
             <div className="bottom-nav-category">FEATURES</div>

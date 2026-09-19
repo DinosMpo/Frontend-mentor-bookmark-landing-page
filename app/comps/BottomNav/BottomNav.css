@@ -9,10 +9,8 @@
 
 #bottom-nav-wrapper {
   display: flex;
-  /* border: 1px solid red; */
   width: 100%;
   max-width: 1110px;
-  /* max-width: 550px; */
   height: 40px;
   align-items: center;
   justify-content: space-between;
@@ -46,10 +44,8 @@
 }
 
 #socials {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid pink; */
   width: 100%;
   max-width: 100px;
 }
@@ -66,14 +62,12 @@
 
 @media only screen and (max-width: 650px) {
   #bottom-nav {
-    /* padding: 80px; */
     flex-direction: column;
     height: 330px;
     justify-content: flex-start;
   }
 
   #bottom-nav-wrapper {
-    /* justify-content: center; */
     flex-direction: column;
   }
 
@@ -85,10 +79,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid black; */
     margin-top: 40px;
-    /* gap: 40px; */
-    /* margin-bottom: 20px; */
   }
 
   .bottom-link {

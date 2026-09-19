@@ -18,8 +18,7 @@ export default function TopNav({
           alt="logo"
           width={0}
           height={0}
-          // sizes="100vw"
-          style={{ width: "148px", height: "25px" }} // optional
+          style={{ width: "148px", height: "25px" }}
         />
       )}
       <div id="nav-wrapper">
@@ -33,9 +32,6 @@ export default function TopNav({
           <div className="nav-category">CONTACT</div>
         </a>
 
-        {/* <div className="nav-category">FEATURES</div>
-        <div className="nav-category">PRICING</div>
-        <div className="nav-category">CONTACT</div> */}
         <div id="login-button">LOGIN</div>
       </div>
 
