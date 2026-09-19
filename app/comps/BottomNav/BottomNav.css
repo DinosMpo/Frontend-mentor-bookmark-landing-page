@@ -1,59 +1,92 @@
 #bottom-nav {
-    background-color: hsl(229, 31%, 21%);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90px;
+  background-color: hsl(229, 31%, 21%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
 }
 
 #bottom-nav-wrapper {
-    display: flex;
-    /* border: 1px solid red; */
-    width: 100%;
-    max-width: 1110px;
-    /* max-width: 550px; */
-    height: 40px;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: white;
+  display: flex;
+  width: 100%;
+  max-width: 1110px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: white;
 }
 
 #bottom-nav-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 530px;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 530px;
+  font-weight: bold;
+}
+
+#logo-bookmark-light {
+  width: 148px;
+  height: 25px;
 }
 
 .bottom-nav-category:hover {
-    color: hsl(0, 94%, 66%);
-    cursor: pointer;
+  color: hsl(0, 94%, 66%);
+  cursor: pointer;
 }
 
 .bottom-link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #socials {
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid pink; */
-    width: 100%;
-    max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100px;
 }
 
 .social-icon {
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .social-icon:hover {
-    filter: invert(47%) sepia(93%) saturate(1352%) hue-rotate(338deg) brightness(98%) contrast(98%);
+  filter: invert(47%) sepia(93%) saturate(1352%) hue-rotate(338deg)
+    brightness(98%) contrast(98%);
+}
+
+@media only screen and (max-width: 650px) {
+  #bottom-nav {
+    flex-direction: column;
+    height: 330px;
+    justify-content: flex-start;
+  }
+
+  #bottom-nav-wrapper {
+    flex-direction: column;
+  }
+
+  #logo-bookmark-light {
+    margin-bottom: 40px;
+  }
+
+  #bottom-nav-left {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .bottom-link {
+    margin-bottom: 33px;
+  }
+
+  .bottom-link:last-child {
+    margin-bottom: 47px;
+  }
 }

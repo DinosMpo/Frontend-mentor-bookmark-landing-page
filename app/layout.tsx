@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Footer from "./comps/Footer/Footer";
-
+import MobileNavModal from "./comps/MobileNavModal/MobileNavModal";
 
 const rubik = Rubik({
-  weight: '400',
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={rubik.className}
-      >
+      <body className={rubik.className}>
         {children}
         <Footer />
       </body>
