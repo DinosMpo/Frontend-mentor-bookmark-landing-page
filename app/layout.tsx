@@ -24,6 +24,18 @@ export default function RootLayout({
       <body className={rubik.className}>
         {children}
         <Footer />
+
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        >
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io">Frontend Mentor</a>. Code by{" "}
+          <a href="https://www.frontendmentor.io/profile/DinosMpo">DinosMpo</a>
+        </div>
       </body>
     </html>
   );
