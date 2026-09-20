@@ -127,4 +127,8 @@
         width: 30%;
         border-bottom: 4px solid hsl(0, 94%, 66%);
     }
+
+    #feature-categories-container {
+        /* width: 90%; */
+    }
 } 
