@@ -27,6 +27,7 @@ export default function Feature({
           src={item.img}
           style={{
             width: "100%",
+            height: "100%",
             maxWidth: `${item.img_width}px`,
             maxHeight: `${item.img_height}px`,
           }}
