@@ -5,7 +5,7 @@ import { useState } from "react";
 import "./QuestionsContainer.css";
 
 export default function QuestionsContainer() {
-  const [activeAnswer, setActiveAnswer] = useState({
+  const [activeAnswer, setActiveAnswer] = useState<Record<string, boolean>>({
     a1: false,
     a2: false,
     a3: false,
@@ -35,15 +35,19 @@ export default function QuestionsContainer() {
     },
   ];
 
-  const showAnswer = (item: any) => {
-    setActiveAnswer({ ...activeAnswer, [item]: !activeAnswer[item] });
+  const showAnswer = (item: keyof typeof activeAnswer) => {
+    setActiveAnswer({
+      ...activeAnswer,
+      [item as keyof typeof activeAnswer]:
+        !activeAnswer[item as keyof typeof activeAnswer],
+    });
   };
 
   const questionsList = questions.map((item, key) => {
     return (
       <div
         className="question-container"
-        onClick={() => showAnswer(`a${key + 1}`)}
+        onClick={() => showAnswer(`a${key + 1}` as keyof typeof activeAnswer)}
         key={key}
       >
         <div className="question-wrapper">

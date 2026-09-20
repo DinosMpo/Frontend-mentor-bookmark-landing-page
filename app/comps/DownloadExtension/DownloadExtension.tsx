@@ -1,4 +1,3 @@
-import React from "react";
 import "./DownloadExtension.css";
 import Extension from "../Extension/Extension";
 
